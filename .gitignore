@@ -1,0 +1,33 @@
+
+.*
+!.gitkeep
+!.gitignore
+tags
+
+*~
+*.back
+# patch command backup file
+*.rej
+*.orig
+
+# cash
+*~
+
+# tmporary
+tmp/
+temp/
+gabage/
+work/
+log/
+/object
+/obj
+/binary
+/build
+
+# node
+node_modules/
+package-lock.json
+
+*.log
+*.pdf
+

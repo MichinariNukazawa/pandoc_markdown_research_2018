@@ -1,0 +1,33 @@
+% brief : Manual build for RuneAMN-Pro series fonts.
+% usage : pdflatex book-of-RuneAMN-Pro-Fonts.tex
+%
+% author : MichinariNukazawa / "project daisy bell"
+% 	michinari.nukazawa@gmail.com
+% 	https://github.com/MichinariNukazawa/RuneAMN-Pro-Series-Fonts
+% license : 2-clause BSD license
+%
+% memo: force quit is "x" or "\stop"
+
+\documentclass[a4paper]{article}
+%\documentclass[flegn]{article}
+\usepackage{pdfpages}
+
+\begin{document}
+\includepdf[pages=-]{./TitleCover.pdf}
+\includepdf[pages=-]{./Content.pdf}
+
+\includepdf[pages=-]{../obj/print/pygments-sample-code.pdf}
+\includepdf[pages=-]{../obj/print/kate-sample-code.pdf}
+\includepdf[pages=-]{../obj/print/monochrome-sample-code.pdf}
+\includepdf[pages=-]{../obj/print/breezeDark-sample-code.pdf}
+\includepdf[pages=-]{../obj/print/espresso-sample-code.pdf}
+\includepdf[pages=-]{../obj/print/zenburn-sample-code.pdf}
+\includepdf[pages=-]{../obj/print/haddock-sample-code.pdf}
+\includepdf[pages=-]{../obj/print/tango-sample-code.pdf}
+
+\includepdf[pages=-]{../obj/print/listings-sample-code.pdf}
+\includepdf[pages=-]{../obj/print/listings0+espresso-sample-code.pdf}
+
+\includepdf[pages=-]{./BackCover.pdf}
+\end{document}
+
