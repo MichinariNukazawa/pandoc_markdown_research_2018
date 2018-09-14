@@ -42,11 +42,13 @@ pandocにてMarkdowndからのPDF生成において、以下を試した。
 サンプルコードはHTML,CSS,JavaScriptを用意した。Webフロントエンド言語が主要ユースケースと想定しているためである。  
 
 # 参照URL
-[Pandoc User’s Guide]( https://pandoc.org/MANUAL.html )
+[Pandoc User’s Guide]( https://pandoc.org/MANUAL.html )  
 
 # 調査結果
 TL;DR参照。  
 以下に、`--highlight-style`オプション毎のPDF出力を示す。  
 
-詳細なオプション等はGitHubリポジトリの生成スクリプトを参照。
-(`--listings`は2ページに収まるようフォントサイズを指定している)
+[GitHub Release上のPDF版 ダウンロードURL]( https://github.com/MichinariNukazawa/pandoc_markdown_research_2018/releases )  
+
+詳細なオプション等はGitHubリポジトリの生成スクリプトを参照。  
+(`--listings`は2ページに収まるようフォントサイズを指定している)  
