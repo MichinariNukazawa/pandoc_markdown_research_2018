@@ -35,8 +35,11 @@ $(OBJECT_DIR)/Content.pdf : README.md Makefile *.sh
 		-o $(OBJECT_DIR)/Content.pdf
 
 book : $(BOOK_FILE)
-$(BOOK_FILE) : pdfs
-$(BOOK_FILE) : *.md $(SOURCE_DIR)/*.md $(SOURCE_DIR)/*.pdf $(SOURCE_DIR)/*tex Makefile
+#$(BOOK_FILE) : pdfs
+$(BOOK_FILE) : *.md $(SOURCE_DIR)/*.md $(SOURCE_DIR)/*.pdf $(SOURCE_DIR)/*tex $(OBJECT_DIR)/*.pdf Makefile
+	# サンプルPDFを手作業で作成
+	# make pdfs
+	# サンプルpdfをtexで結合可能にリネーム
 	rm -rf $(OBJECT_DIR)/print
 	$(MKDIR_P) $(OBJECT_DIR)/print
 	cp $(OBJECT_DIR)/*.pdf $(OBJECT_DIR)/print/
